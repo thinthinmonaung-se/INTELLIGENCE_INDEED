@@ -1,0 +1,24 @@
+{
+  "fileName": "II.RPA.Plugin.Windows.dll",
+  //使用UIA2的应用，应用名在selector中获取
+  "Mode2Apps": [ "eTerm3", "yqzs", "m2browser", "saplogon" ],
+  //自动使用深度匹配
+  "AutoSeekDepthApps": [ "wechatapp", "wechat", "qq", "aliworkbench", "dingtalk" ],
+  "ScanElementTreeApps": [ "wxwork", "wxworklocal" ],
+  "AccEnablerApps": [ "wxwork", "wxworklocal" ],
+  //查找子元素的深度，小于等于0关闭
+  "SeekDepth": "0",
+  //是否匹配鼠标点匹配元素的同级元素 
+  "MatchSiblings": "false",
+  //预刷窗口元素
+  "BrushApp": [ "aliworkbench", "yqzs", "m2browser", "appsubproc" ],
+  "RpaProcess": [ "实在设计器", "Z-Factory", "z-bot" ],
+  //Java拾取模式 0:直接获取，1:逐层获取
+  "JavaCaptureMode": "1",
+  //路径纠错 true启用 false不启用
+  "ErrorScan": "false",
+  //匹配根节点的方式类型,0 UIA方式，1窗口匹配
+  "MatchRootNodeMode": 1,
+  //忽略窗口是否可视
+  "ignoreVisible": [ "iexplore" ]
+}
